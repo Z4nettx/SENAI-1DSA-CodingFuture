@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --fontcolor: #D8CFBC;
+    --secondcolor: #b2a07b;
+    --terciarycolor: #7d6c4a;
+    --fourcolor: #6B3927;
+    --sec2: #1B161C;
+    --sec4: #9F6C54;
+
+}
+
+body {
+    font: bold 16px 'Montserrat';
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    background-color: rgba(0, 0, 0, .35);
+    font-size: 1.2em;
+    text-wrap: nowrap;
+    min-height: 15vh;
+    width: 100%;
+    z-index: 100;
+    font: 600 26px 'Montserrat';
+}
+
+header a {
+    color: #fff;
+}
+
+header i {
+    font-size: 1.3em;
+}
+
+header img {
+    width: 150px;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    color: #fff;
+}
+
+header div {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+#sec1 {
+    height: 100vh;
+    width: 100%;
+    background: url(/assets/bannermain.jpg) center center / cover;
+    display: flex;
+}
+#sec2 {
+    min-height: 160vh;
+    background: var(--sec2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#sec2 img:nth-child(1) {
+    width: 70vw;
+    height: auto;
+}
+
+#sec2 .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+#sec2 .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 20px;
+    flex: 5 .5;
+    transition: .3s ease;
+    box-sizing: border-box;
+}
+
+#sec2 .produto:hover {
+    background-color: rgba(255, 255, 255, .1);
+    transform: translateY(-5px);
+}
+
+#sec2 .produto p:last-of-type {
+    font-weight: 400;
+}
+
+#sec2 .produto img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#sec2 .produto p {
+    margin: 0.5rem 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#sec2 button {
+    font: 600 1rem 'Montserrat';
+    width: 80%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--terciarycolor);
+    transition: .3s ease;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sec2 button:hover {
+    background-color: var(--fourcolor);
+    transform: scale(1.05);
+}
+
+#sec3 {
+    min-height: 60vh;
+    background-color: #000;
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sec3 h1 {
+    letter-spacing: .3ch;
+    font-size: 2em;
+}
+
+#sec3 .container-merch {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+#sec4 {
+    background-color: var(--sec4);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #F6F3EC;
+    padding: 1rem 0;
+}
+
+#sec4 h1 {
+    letter-spacing: .5ch;
+    flex: 1 1 100px;
+}
+
+#sec4 i {
+    font-size: 4rem;
+    flex: 1 1 100px;
+}
+
+#sec4 p {
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 70%;
+    flex: 1 1 150px;
+}
+
+#sec5 {
+    min-height: 110vh;
+    background-color: var(--sec2);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 2%;
+}
+
+#sec5 img {
+    width: 50vh;
+}
+
+#sec5 .sec5-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    align-items: start;
+    width: 40%;
+    height: 80%;
+    margin: 0% 3%;
+    color: #fff;
+    font-weight: lighter;
+}
+
+#sec5 button {
+    background-color: var(--sec4);
+    border: 0px solid transparent;
+    padding: 15px 30px;
+    text-wrap: nowrap;
+    font: 600 1em 'Montserrat';
+    color: #fff;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#sec5 h1 {
+    letter-spacing: .2ch;
+    font-size: 2rem;
+}
+
+#sec5 button:hover {
+    background-color: var(--fourcolor);
+    transform: scale(1.1);
+
+}
+
+::selection {
+    color: #000;
+    background-color: #FFF7B6;
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 27vh;
+        flex-direction: column;
+        justify-content: space-around;
+        backdrop-filter: blur(3px);
+    }
+    #sec5 .sec5-text {
+        text-align: justify;
+        width: 60%;
+    }
+    #sec5 button {
+        align-self: center;
+    }
+}

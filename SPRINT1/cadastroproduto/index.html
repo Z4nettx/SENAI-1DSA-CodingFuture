@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervejaria Dogma - Cadastro Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/favicon-dogma.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Logo">
+    </header>
+    <main>
+        <section>
+            <div class="content1">
+            
+            <div class="register">
+                <a href="/paineladmin/index.html" class="back-button"><i class="fa-solid fa-arrow-left" title="Voltar"></i></a>
+                <h2>Cadastro de Produto</h2>
+                <label for="fornecedor">Fornecedor:</label>
+                <input type="text" id="fornecedor">
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+                <label for="desc">Descrição:</label>
+                <input type="text" id="desc">
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco">
+            </div>
+            <div class="list">
+                
+                <h2>Listagem do Produto</h2>
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Fornecedor</th>
+                        <th>Ações</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cerveja1</td>
+                            <td>Cerveja 1</td>
+                            <td>R$</td>
+                            <td>Fornecedor X</td>
+                            <td>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            <div class="content2">
+                <div class="container">
+                    <h2>Adicionar Imagem</h2>
+                    <div class="image-upload-box">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <button class="btn-add">Adicionar</button>
+                </div>
+                <button class="btn-cadastrar">Cadastrar</button>
+            </div>
+            
+        </section>
+            
+
+
+
+    </main>
+</body>
+
+</html>
