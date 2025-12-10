@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    --fontcolor: #D8CFBC;
+    --secondcolor: #b2a07b;
+    --terciarycolor: #7d6c4a;
+    --fourcolor: #6B3927;
+    --sec2: #1B161C;
+    --sec4: #9F6C54;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: 
+    linear-gradient(to top, #1B161C, #1b161c37),
+    url(../assets/dogma.webp) left top / cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #3e2723;
+    min-width: 150px;
+    max-width: 600px;
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 15px;
+    background-color: #00000056;
+    box-shadow: 0 0 150px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    color: var(--sec2); 
+    margin-bottom: 10px;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+.container p {
+    margin-bottom: 25px;
+    font-size: larger;
+    color: var(--sec2);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background: #9F6C54;
+    color:#3e2723;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+    background: hsl(19, 31%, 38%);
+    color: #000;
+    transform: scale(1.05);
+}
+
+.sair {
+    color: #860a0a;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.sair:hover {
+    transform: scale(1.08);
+    background: #860a0a;
+    color: #fff;
+}
